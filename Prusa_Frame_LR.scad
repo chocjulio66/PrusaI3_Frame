@@ -7,7 +7,7 @@ use <write.scad>
 
 module lower_right()
 {
-translate([-230,0,0])
+//translate([-230,0,0])
 	difference() {
 		union(){
 			intersection() {
@@ -83,14 +83,13 @@ translate([-230,0,0])
 	cube([45, 30, 20], center = false);
 	*/
 	
-translate([0, 0, -2])
- 
+	translate([0, 0, -2])
 	linear_extrude(height = 20) 	import(file = "new7.dxf", layer = "cutout");
 	
 	
 				 
     //put dow rod through parts
-	translate([340, 125, 10])
+	translate([335, 125, 10])
 	rotate(90, [1, 0, 0])
 	cylinder(h = 50, r=4);
 
@@ -105,6 +104,6 @@ translate([0, 0, -2])
 
 //Build Frame one piece at a time!
 
- lower_right();
+ //lower_right();
  
 

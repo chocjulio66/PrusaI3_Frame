@@ -56,6 +56,6 @@ difference() {
 
 //Build Frame one piece at a time!
 
- middle_right();
+//middle_right();
   
 

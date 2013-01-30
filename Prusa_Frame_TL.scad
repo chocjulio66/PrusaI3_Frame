@@ -6,7 +6,7 @@ use <write.scad>
 
 module top_left()
 {
-translate([0, -230, 0])
+//translate([0, -230, 0])
 	//translate([0, -230, 0])
 	difference() {
 		union(){
@@ -49,11 +49,18 @@ translate([0, -230, 0])
 		translate([45, 335, -2])
 		cube([65, 30, 20], center = false);
 
+		
+		//horizontal dow rod hole
+		translate([100, 341, 10])
+		rotate(90, [0, 1, 0])
+		cylinder(h = 250, r=4);
+		
+		//vertical dow rod hole
 		translate([40, 285, 10])
 		rotate(90, [1, 0, 0])
 		cylinder(h = 250, r=4);
 		
-			translate([135, 345, 25])
+		translate([135, 345, 25])
 		write("Prusa I3",t=12.5,h=20,center=true);translate([20,30,0]);
 
 	 
@@ -62,6 +69,6 @@ translate([0, -230, 0])
 
 
 
-top_left();
+//top_left();
 
 
